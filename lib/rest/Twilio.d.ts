@@ -123,7 +123,6 @@ declare namespace Twilio {
    * @property allowRedirects - Should the client follow redirects
    * @property data - The request data
    * @property headers - The request headers
-   * @property logLevel - Show debug logs
    * @property method - The http method
    * @property params - The request params
    * @property password - The password used for auth
@@ -135,7 +134,6 @@ declare namespace Twilio {
     allowRedirects?: boolean;
     data?: object;
     headers?: object;
-    logLevel?: string;
     method: string;
     params?: object;
     password?: string;
@@ -152,7 +150,6 @@ declare namespace Twilio {
    * @property env - The environment object. Defaults to process.env
    * @property httpClient - The client used for http requests. Defaults to RequestClient
    * @property lazyLoading - Enable lazy loading, loading time will decrease if enabled
-   * @property logLevel - Debug logs will be shown. Defaults to none
    * @property region - Twilio region to use. Defaults to us1 if edge defined
    */
   export interface TwilioClientOptions {
@@ -161,7 +158,6 @@ declare namespace Twilio {
     env?: object;
     httpClient?: RequestClient;
     lazyLoading?: boolean;
-    logLevel?: string;
     region?: string;
   }
 }
